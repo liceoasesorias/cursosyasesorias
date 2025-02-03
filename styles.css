@@ -1,0 +1,139 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f6f9; /* Fondo gris claro */
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor principal para empujar el footer hacia abajo */
+main {
+    flex: 1;
+    padding: 20px; /* Agregar un poco de espacio interno */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 10px 0; /* Margen pequeño entre secciones */
+    background-color: white; /* Fondo blanco para cada sección */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo del header */
+header {
+    padding: 20px;
+    background-color: #2196F3;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos del logo */
+.logo {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos del menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #2196F3;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Estilo para el enlace de Facebook */
+#contacto a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #1877F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 18px;
+}
+
+/* Icono de Facebook */
+#contacto a i {
+    font-size: 20px;
+}
+
+/* Efecto hover */
+#contacto a:hover {
+    background-color: #1565C0;
+}
+
+/* Estilo de los li en la sección servicios */
+#servicios ul li {
+    list-style: none;
+    padding: 10px;
+    background-color: rgba(33, 150, 243, 0); /* Fondo completamente transparente */
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    color: #2c3e50;  /* Mismo color que la información */
+}
+
+/* Cambiar color de fondo al pasar el cursor */
+#servicios ul li.curso:hover {
+    background-color: rgba(33, 150, 243, 0.1); /* Fondo transparente en hover */
+    color: #2196F3; /* Cambiar el color del texto al azul al pasar el cursor */
+}
+
+/* Estilo de la información del curso, oculta por defecto */
+#servicios ul li .informacion {
+    display: none;
+    margin-top: 10px;
+    background-color: rgba(231, 231, 231, 0.7); /* Fondo completamente transparente */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #2c3e50;  /* Mismo color que el curso */
+}
+
+/* Mostrar la información al hacer clic */
+#servicios ul li.active .informacion {
+    display: block;
+}
+
+/* No debe haber cambio de color ni interactividad en los elementos de información */
+#servicios ul li .informacion {
+    cursor: default;
+    color: #2c3e50;  /* Mantener color original para la información */
+}
